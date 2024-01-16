@@ -309,12 +309,13 @@ nav {
     height: 120px;
     background-color: #ff5400;
     position: absolute;
-    top: 70%;
-    right: 5%;
+    top: 63%;
+    right: 2%;
     font-size: 32px;
     font-weight: 800;
     color: white;
     border-radius: 15px;
+    rotate: -30deg;
     & #web {
         font-size: 24px;
         font-weight: 400;
@@ -354,4 +355,43 @@ nav {
   }
 }
 
+/* footer section start */
+footer {
+    background-color: #1313180D;
+    padding: 80px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+.foot-title {
+    display: flex;
+    gap: 25px;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.foot-para {
+    width: 760px;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.social-icon {
+    display: flex;
+    gap: 30px;
+    align-self: center;
+    margin-bottom: 50px;
+    & i {
+        font-size: 30px;
+    }
+}
+
+.copyright {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-self: center;
+}
