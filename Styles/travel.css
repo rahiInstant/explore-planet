@@ -31,7 +31,7 @@ nav {
 }
 
 #Planet {
-    color: var(--color_01);
+  color: var(--color_01);
 }
 
 .nav-btn {
@@ -51,61 +51,183 @@ nav {
 
 /* banner section start */
 .banner {
-    width: 1170px;
-    height: 500px;
-    background-image:linear-gradient(180deg, #131318, #13131800), url("../Images/banner.png");
-    margin: 0 auto;
-    border-radius: 20px;
-    padding: 100px 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 1170px;
+  height: 500px;
+  background-image: linear-gradient(180deg, #131318, #13131800),
+    url("../Images/banner.png");
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%)#131318, #13131800 */
 
 .banner-content {
-    width: 680px;
-    text-align: center;
+  width: 680px;
+  text-align: center;
 }
 
 .banner-title {
-    font-size: 64px;
-    font-weight: 800;
-    color: var(--color_02);
-    margin-bottom: 20px;
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--color_02);
+  margin-bottom: 20px;
 }
 .banner-description {
-    font-size: 16px;
-    font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color_02);
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+.banner-form > form {
+  margin-top: 30px;
+  width: 768px;
+  height: 52px;
+  color: red;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  & .element {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+  }
+  & .element:last-child {
+    background-color: var(--color_01);
     color: var(--color_02);
-    line-height: 26px;
+    font-weight: 700;
+  }
+}
+
+/* section-1 start */
+
+.section-1 {
+  display: flex;
+  margin: 150px 180px;
+  padding: 30px 60px;
+  gap: 80px;
+}
+
+.section-1-left {
+  width: 50%;
+  height: 100%;
+}
+.section-1-left-title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.section-1-left-list {
+  margin-left: 50px;
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  & li {
+    margin-bottom: 13px;
+  }
+}
+
+.section-1-left-para {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.btn-primary {
+  width: 180px;
+  height: 50px;
+  border: none;
+  background-color: var(--color_01);
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color_02);
+  margin-top: 25px;
+}
+
+.section-1-right {
+  width: 50%;
+  & img {
+    width: 100%;
+    height: 80%;
+  }
+}
+
+/* section-1 end */
+
+/* section-2 start */
+
+.section-2 {
+  width: 1170;
+  margin: 150px 180px;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-2-content {
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-2-title {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.section-2-description {
+    font-size: 18px;
+    font-weight: 400;
     margin-bottom: 40px;
 }
 
-.banner-form> form {
-    margin-top: 30px;
-    width: 768px;
-    height: 52px;
-    color: red;
-    display: flex;
-    padding: 15px;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    & .element {
-        width: 100%;
-        height: 50px;
-        border-radius: 10px;
-        padding: 10px;
-        border: none;
-    }
-    & .element:last-child {
-        background-color: var(--color_01);
-        color: var(--color_02);
-        font-weight: 700;
-    }
+#img-1 {
+    background-image: url('../Images/1.png');
 }
 
+#img-2 {
+    grid-area: img-2;
+}
 
+#img-3 {
+    grid-area: img-3;
+}
+
+#img-4 {
+    grid-area: img-4;
+}
+#img-5 {
+    grid-area: img-5;
+}
+#img-6 {
+    grid-area: img-6;
+}
+#img-7 {
+    grid-area: img-7;
+} */
+
+
+
+.section-2-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.row  {
+    height: 200px;
+}
 
