@@ -17,21 +17,21 @@
 }
 
 header {
-  width: 80%;
+  width: 100%;
+  background-color: white;
   padding: 1.3rem 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  & a {
-    text-decoration: none;
-    color: black;
-    font-weight: 400;
-    font-size: 20px;
-    margin-left: 2rem;
-  }
 }
-
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 2rem;
+}
 .logo {
   font-size: 2rem;
   font-weight: 700;
@@ -87,9 +87,11 @@ header {
 }
 .banner-form {
   width: 100%;
-}
-.form{
   margin-top: 30px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.3);
+}
+.form {
   display: flex;
   padding: 15px;
   width: 100%;
@@ -101,6 +103,7 @@ header {
     height: 50px;
     border-radius: 10px;
     border: none;
+    padding: 15px;
   }
   & .element:last-child {
     background-color: var(--color_01);
@@ -504,6 +507,7 @@ footer {
   header {
     padding: 1.3rem 5%;
     position: fixed;
+    top: 0;
   }
   .icon {
     right: 5%;
@@ -545,8 +549,7 @@ footer {
     transition-delay: calc(0.15s * var(--i));
   }
   .banner {
-
-    margin: 30px 20px;
+    margin: 120px 20px;
     padding: 150px 50px;
   }
   .banner-content {
@@ -564,13 +567,70 @@ footer {
     flex-direction: column;
     height: auto;
     margin: 20px 30px;
-    & .section-1-left, .section-1-right {
+    & .section-1-left,
+    .section-1-right {
       width: 100%;
     }
   }
   .section-1-right {
     width: 50%;
     height: 50%;
+  }
+
+  .section-2,
+  .section-3,
+  .pricing,
+  .section-4 {
+    margin: 15px 25px;
+    padding: 10px 15px;
+    width: auto;
+    height: auto;
+  }
+  .row {
+    flex-direction: column;
+    flex: 1;
+    & img {
+      width: 100%;
+    }
+  }
+  .section-2-content,
+  .section-3-content,
+  .foot-para {
+    width: auto;
+    margin: 20px 40px;
+  }
+  .pricing-description {
+    margin: 15px;
+  }
+  .princing-content {
+    flex-direction: column;
+  }
+  .card {
+    width: auto;
+  }
+  .section-4 {
+    flex-direction: column;
+  }
+  .section-4-left,
+  .section-4-right {
+    width: 100%;
+  }
+  .section-4-left {
+    padding: 20px;
+  }
+  .section-4-right {
+    h4 {
+      width: 40%;
+      height: 20%;
+      font-size: 26px;
+      & #web {
+        font-size: 16px;
+      }
+    }
+  }
+  footer {
+    margin: 15px 25px;
+    padding: 30px 35px;
   }
 }
 
