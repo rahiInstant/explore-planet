@@ -13,21 +13,23 @@
   <body>
     <header>
       <a href="#" class="logo">Logo</a>
-      <label for="" class="icon">
-        <i class="fa-solid fa-bars"></i>
+      <input type="checkbox" name="" id="check">
+      <label for="check" class="icon">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <i class="fa-solid fa-xmark" id="close-icon"></i>
       </label>
       <nav class="navbar">
         <ul>
-          <a href="" style="color: #ff5400">Home</a>
-          <a href="">packages</a>
-          <a href="">Testimonial</a>
-          <a href="">Blog</a>
-          <a href="">Contact</a>
+          <a href="" style="color: #ff5400; --i:0;">Home</a>
+          <a href="" style="--i:1;">packages</a>
+          <a href="" style="--i:2;">Testimonial</a>
+          <a href="" style="--i:3;">Blog</a>
+          <a href="" style="--i:4;">Contact</a>
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="banner hide">
+    <main >
+      <div class="banner">
         <div class="banner-content">
           <div class="banner-title">Explore Your Travel</div>
           <div class="banner-description">
@@ -38,7 +40,7 @@
           </div>
         </div>
         <div class="banner-form">
-          <form>
+          <form class="form">
             <input class="element" type="text" placeholder="Where go" />
             <select class="element" name="" id="">
               <option value="when" selected>when</option>
@@ -50,7 +52,7 @@
           </form>
         </div>
       </div>
-      <section class="section-1 hide">
+      <section class="section-1">
         <div class="section-1-left">
           <h1 class="section-1-left-title">Our Popular Tours</h1>
           <p class="section-1-left-para">
@@ -85,7 +87,7 @@
 
         <img class="section-1-right" src="Images/img_4.png" alt="" />
       </section>
-      <section class="section-2 hide">
+      <section class="section-2">
         <div class="section-2-content">
           <div class="section-2-title">Choose Your Destination</div>
           <div class="section-2-description">
@@ -131,7 +133,7 @@
           </div>
         </div>
       </section>
-      <section class="section-3 hide">
+      <section class="section-3">
         <div class="section-3-content">
           <div class="section-3-title">Why Choose Us</div>
           <div class="section-3-description">
@@ -172,7 +174,7 @@
           </div>
         </div>
       </section>
-      <div class="pricing hide">
+      <div class="pricing">
         <div class="pricing-intro">
           <h1 class="pricing-title">Pricing Plans</h1>
           <p class="pricing-description">
@@ -217,7 +219,7 @@
         </div>
       </div>
 
-      <section class="section-4 hide">
+      <section class="section-4">
         <div class="section-4-left">
           <div class="section-4-left-part-01">
             <h2>Newsletter</h2>
